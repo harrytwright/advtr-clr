@@ -1,0 +1,11 @@
+{
+  "name": "@advtr/clr",
+  "version": "0.0.1",
+  "description": "Generate .clr files from a JSON theme file",
+  "main": "index.js",
+  "scripts": {
+    "build": "cmake --build ./cmake-build-debug"
+  },
+  "author": "Harry T Wright",
+  "license": "MIT"
+}
