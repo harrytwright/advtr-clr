@@ -1,0 +1,348 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C845ED14282D389B005735D9 /* ADVArgParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C845ED13282D389B005735D9 /* ADVArgParser.m */; };
+		C845ED17282D4CCB005735D9 /* ADVArgBoolean.m in Sources */ = {isa = PBXBuildFile; fileRef = C845ED16282D4CCB005735D9 /* ADVArgBoolean.m */; };
+		C87C02BF282E85A1003BF698 /* ADVUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C87C02BE282E85A1003BF698 /* ADVUtils.m */; };
+		C8C6E5B2282BB7B3009CBF9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C6E5B1282BB7B3009CBF9E /* main.m */; };
+		C8C6E5BA282BB83D009CBF9E /* ADVColorPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C6E5B9282BB83D009CBF9E /* ADVColorPalette.m */; };
+		C8C6E5BD282BB8EF009CBF9E /* ADVColor.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C6E5BC282BB8EF009CBF9E /* ADVColor.m */; };
+		C8C6E5C1282BD079009CBF9E /* NSDictionary+Flatten.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C6E5C0282BD079009CBF9E /* NSDictionary+Flatten.m */; };
+		C8C6E5C3282BE1B2009CBF9E /* Flatten.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C6E5C2282BE1B2009CBF9E /* Flatten.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C8C6E5AC282BB7B3009CBF9E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C845ED0A282D35CB005735D9 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		C845ED0C282D35CB005735D9 /* demo-theme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "demo-theme.json"; sourceTree = "<group>"; };
+		C845ED0E282D35CB005735D9 /* advtr-clr */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "advtr-clr"; sourceTree = "<group>"; };
+		C845ED0F282D3612005735D9 /* ADVUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADVUtils.h; sourceTree = "<group>"; };
+		C845ED12282D389B005735D9 /* ADVArgParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADVArgParser.h; sourceTree = "<group>"; };
+		C845ED13282D389B005735D9 /* ADVArgParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADVArgParser.m; sourceTree = "<group>"; };
+		C845ED15282D4CCB005735D9 /* ADVArgBoolean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADVArgBoolean.h; sourceTree = "<group>"; };
+		C845ED16282D4CCB005735D9 /* ADVArgBoolean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADVArgBoolean.m; sourceTree = "<group>"; };
+		C87C02BD282E84A5003BF698 /* ADVLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADVLogger.h; sourceTree = "<group>"; };
+		C87C02BE282E85A1003BF698 /* ADVUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADVUtils.m; sourceTree = "<group>"; };
+		C8C6E5AE282BB7B3009CBF9E /* ADVColorPalette */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ADVColorPalette; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8C6E5B1282BB7B3009CBF9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C8C6E5B8282BB83D009CBF9E /* ADVColorPalette.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADVColorPalette.h; sourceTree = "<group>"; };
+		C8C6E5B9282BB83D009CBF9E /* ADVColorPalette.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADVColorPalette.m; sourceTree = "<group>"; };
+		C8C6E5BB282BB8EF009CBF9E /* ADVColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADVColor.h; sourceTree = "<group>"; };
+		C8C6E5BC282BB8EF009CBF9E /* ADVColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADVColor.m; sourceTree = "<group>"; };
+		C8C6E5BF282BD018009CBF9E /* NSDictionary+Flatten.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Flatten.h"; sourceTree = "<group>"; };
+		C8C6E5C0282BD079009CBF9E /* NSDictionary+Flatten.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Flatten.m"; sourceTree = "<group>"; };
+		C8C6E5C2282BE1B2009CBF9E /* Flatten.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Flatten.m; sourceTree = "<group>"; };
+		C8C6E5C4282BE1BD009CBF9E /* Flatten.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Flatten.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C8C6E5AB282BB7B3009CBF9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C845ED0B282D35CB005735D9 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				C845ED0C282D35CB005735D9 /* demo-theme.json */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		C845ED0D282D35CB005735D9 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				C845ED0E282D35CB005735D9 /* advtr-clr */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		C8C6E5A5282BB7B3009CBF9E = {
+			isa = PBXGroup;
+			children = (
+				C845ED0D282D35CB005735D9 /* bin */,
+				C845ED0A282D35CB005735D9 /* CMakeLists.txt */,
+				C845ED0B282D35CB005735D9 /* data */,
+				C8C6E5B0282BB7B3009CBF9E /* src */,
+				C8C6E5AF282BB7B3009CBF9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C8C6E5AF282BB7B3009CBF9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8C6E5AE282BB7B3009CBF9E /* ADVColorPalette */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8C6E5B0282BB7B3009CBF9E /* src */ = {
+			isa = PBXGroup;
+			children = (
+				C8C6E5B1282BB7B3009CBF9E /* main.m */,
+				C87C02BD282E84A5003BF698 /* ADVLogger.h */,
+				C845ED12282D389B005735D9 /* ADVArgParser.h */,
+				C845ED13282D389B005735D9 /* ADVArgParser.m */,
+				C845ED15282D4CCB005735D9 /* ADVArgBoolean.h */,
+				C845ED16282D4CCB005735D9 /* ADVArgBoolean.m */,
+				C8C6E5BB282BB8EF009CBF9E /* ADVColor.h */,
+				C8C6E5BC282BB8EF009CBF9E /* ADVColor.m */,
+				C8C6E5B8282BB83D009CBF9E /* ADVColorPalette.h */,
+				C8C6E5B9282BB83D009CBF9E /* ADVColorPalette.m */,
+				C845ED0F282D3612005735D9 /* ADVUtils.h */,
+				C87C02BE282E85A1003BF698 /* ADVUtils.m */,
+				C8C6E5BF282BD018009CBF9E /* NSDictionary+Flatten.h */,
+				C8C6E5C0282BD079009CBF9E /* NSDictionary+Flatten.m */,
+				C8C6E5C4282BE1BD009CBF9E /* Flatten.h */,
+				C8C6E5C2282BE1B2009CBF9E /* Flatten.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C8C6E5AD282BB7B3009CBF9E /* ADVColorPalette */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8C6E5B5282BB7B3009CBF9E /* Build configuration list for PBXNativeTarget "ADVColorPalette" */;
+			buildPhases = (
+				C8C6E5AA282BB7B3009CBF9E /* Sources */,
+				C8C6E5AB282BB7B3009CBF9E /* Frameworks */,
+				C8C6E5AC282BB7B3009CBF9E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ADVColorPalette;
+			productName = ADVColorPalette;
+			productReference = C8C6E5AE282BB7B3009CBF9E /* ADVColorPalette */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8C6E5A6282BB7B3009CBF9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Harry Wright";
+				TargetAttributes = {
+					C8C6E5AD282BB7B3009CBF9E = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = C8C6E5A9282BB7B3009CBF9E /* Build configuration list for PBXProject "ADVColorPalette" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C8C6E5A5282BB7B3009CBF9E;
+			productRefGroup = C8C6E5AF282BB7B3009CBF9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8C6E5AD282BB7B3009CBF9E /* ADVColorPalette */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C8C6E5AA282BB7B3009CBF9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C845ED14282D389B005735D9 /* ADVArgParser.m in Sources */,
+				C87C02BF282E85A1003BF698 /* ADVUtils.m in Sources */,
+				C8C6E5B2282BB7B3009CBF9E /* main.m in Sources */,
+				C8C6E5C3282BE1B2009CBF9E /* Flatten.m in Sources */,
+				C8C6E5C1282BD079009CBF9E /* NSDictionary+Flatten.m in Sources */,
+				C8C6E5BA282BB83D009CBF9E /* ADVColorPalette.m in Sources */,
+				C8C6E5BD282BB8EF009CBF9E /* ADVColor.m in Sources */,
+				C845ED17282D4CCB005735D9 /* ADVArgBoolean.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C8C6E5B3282BB7B3009CBF9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C8C6E5B4282BB7B3009CBF9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C8C6E5B6282BB7B3009CBF9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5XGDY49LZ5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C8C6E5B7282BB7B3009CBF9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5XGDY49LZ5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C8C6E5A9282BB7B3009CBF9E /* Build configuration list for PBXProject "ADVColorPalette" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8C6E5B3282BB7B3009CBF9E /* Debug */,
+				C8C6E5B4282BB7B3009CBF9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8C6E5B5282BB7B3009CBF9E /* Build configuration list for PBXNativeTarget "ADVColorPalette" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8C6E5B6282BB7B3009CBF9E /* Debug */,
+				C8C6E5B7282BB7B3009CBF9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C8C6E5A6282BB7B3009CBF9E /* Project object */;
+}
