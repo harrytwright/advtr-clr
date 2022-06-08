@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C844B7082850C41E006BA8B4 /* rgba.m in Sources */ = {isa = PBXBuildFile; fileRef = C844B7062850C41E006BA8B4 /* rgba.m */; };
 		C845ED14282D389B005735D9 /* ADVArgParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C845ED13282D389B005735D9 /* ADVArgParser.m */; };
 		C845ED17282D4CCB005735D9 /* ADVArgBoolean.m in Sources */ = {isa = PBXBuildFile; fileRef = C845ED16282D4CCB005735D9 /* ADVArgBoolean.m */; };
 		C87C02BF282E85A1003BF698 /* ADVUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C87C02BE282E85A1003BF698 /* ADVUtils.m */; };
@@ -30,6 +31,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C844B7062850C41E006BA8B4 /* rgba.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rgba.m; sourceTree = "<group>"; };
+		C844B7072850C41E006BA8B4 /* rgba.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rgba.h; sourceTree = "<group>"; };
 		C845ED0A282D35CB005735D9 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
 		C845ED0C282D35CB005735D9 /* demo-theme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "demo-theme.json"; sourceTree = "<group>"; };
 		C845ED0E282D35CB005735D9 /* advtr-clr */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "advtr-clr"; sourceTree = "<group>"; };
@@ -117,6 +120,8 @@
 				C8C6E5C0282BD079009CBF9E /* NSDictionary+Flatten.m */,
 				C8C6E5C4282BE1BD009CBF9E /* Flatten.h */,
 				C8C6E5C2282BE1B2009CBF9E /* Flatten.m */,
+				C844B7072850C41E006BA8B4 /* rgba.h */,
+				C844B7062850C41E006BA8B4 /* rgba.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -155,7 +160,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C8C6E5A9282BB7B3009CBF9E /* Build configuration list for PBXProject "ADVColorPalette" */;
+			buildConfigurationList = C8C6E5A9282BB7B3009CBF9E /* Build configuration list for PBXProject "ADVColor" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -184,6 +189,7 @@
 				C8C6E5C3282BE1B2009CBF9E /* Flatten.m in Sources */,
 				C8C6E5C1282BD079009CBF9E /* NSDictionary+Flatten.m in Sources */,
 				C8C6E5BA282BB83D009CBF9E /* ADVColorPalette.m in Sources */,
+				C844B7082850C41E006BA8B4 /* rgba.m in Sources */,
 				C8C6E5BD282BB8EF009CBF9E /* ADVColor.m in Sources */,
 				C845ED17282D4CCB005735D9 /* ADVArgBoolean.m in Sources */,
 			);
@@ -324,7 +330,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C8C6E5A9282BB7B3009CBF9E /* Build configuration list for PBXProject "ADVColorPalette" */ = {
+		C8C6E5A9282BB7B3009CBF9E /* Build configuration list for PBXProject "ADVColor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C8C6E5B3282BB7B3009CBF9E /* Debug */,

@@ -65,17 +65,33 @@
 }
 
 - (void)generate:(NSURL *)filePath withError:(NSError * _Nullable *)error {
+    ADVArgParser *parser = [ADVArgParser defaultParser];
+
     ADVLog(@"Creating NSColorList %@", [filePath.lastPathComponent stringByDeletingPathExtension]);
     NSColorList *colorList = [[NSColorList alloc] initWithName:[filePath.lastPathComponent stringByDeletingPathExtension]];
     NSDictionary *flattenedDictionary = [self.scheme flattenWithDeliminator:@"-"];
 
     NSArray *keys = [[flattenedDictionary allKeys] sortedArrayUsingSelector:@selector(compare:)];
     for (NSString *key in keys) {
-        ADVLog(@"Adding color - %@", [ADVColor color:key withValue:[flattenedDictionary objectForKey:key]]);
-        [colorList setColor:[[ADVColor color:key withValue:[flattenedDictionary objectForKey:key]] color] forKey:key];
+        NSString *fixedKey;
+        if (ADVArgParserGetter(@"prefix", NSString)) {
+            fixedKey = [NSString stringWithFormat:@"%@-%@", ADVArgParserGetter(@"prefix", NSString), key];
+        } else {
+            fixedKey = key;
+        }
+
+        if ([ADVArgParserGetter(@"dry-run", ADVArgBoolean) value]) {
+            NSLog(@"Adding color - %@", [ADVColor color:fixedKey withValue:[flattenedDictionary objectForKey:key]]);
+        } else {
+            ADVLog(@"Adding color - %@", [ADVColor color:fixedKey withValue:[flattenedDictionary objectForKey:key]]);
+        }
+
+        [colorList setColor:[[ADVColor color:fixedKey withValue:[flattenedDictionary objectForKey:key]] color] forKey:fixedKey];
     }
 
-    ADVLog(@"Writng NSColorList file @ %@", filePath.absoluteString);
+    if ([ADVArgParserGetter(@"dry-run", ADVArgBoolean) value]) return;
+
+    ADVLog(@"Writing NSColorList file @ %@", filePath.absoluteString);
     [colorList writeToURL:filePath error:error];
 }
 

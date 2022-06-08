@@ -16,6 +16,7 @@ set(HEADERFILES
         ./src/Flatten.h
         ./src/ADVUtils.h
         ./src/ADVLogger.h
+        ./src/rgba.h
 )
 
 set(SOURCEFILES
@@ -26,6 +27,7 @@ set(SOURCEFILES
         ./src/ADVArgParser.m
         ./src/Flatten.m
         ./src/ADVUtils.m
+        ./src/rgba.m
 )
 
 add_executable(

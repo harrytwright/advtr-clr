@@ -15,11 +15,11 @@
 
 @interface ADVArg : NSObject
 
-@property (nonnull) NSString *flag;
+@property (nonnull, assign) NSString *flag;
 
-@property (nullable) id value;
+@property (nullable, assign) id value;
 
-@property (nullable) NSString *helpMessage;
+@property (nullable, assign) NSString *helpMessage;
 
 @property ADVArgParserType type;
 
@@ -41,12 +41,15 @@
 }
 
 - (NSString *)description {
+    // Todo: Trim this rather than using tabs
     return [NSString stringWithFormat:@"--%@\t\t%@", self.flag, self.helpMessage ? self.helpMessage : @""];
 }
 
 @end
 
-ADVArgParser *defaultParser;
+static ADVArgParser * _defaultParser;
+
+static dispatch_once_t onceToken;
 
 @interface ADVArgParser ()
 
@@ -68,10 +71,19 @@ ADVArgParser *defaultParser;
 }
 
 + (instancetype) defaultParser {
-    if (!defaultParser) {
-        defaultParser = [[ADVArgParser alloc] init];
-    }
-    return defaultParser;
+    dispatch_once(&onceToken, ^{
+        _defaultParser = [[ADVArgParser alloc] init];
+    });
+    return _defaultParser;
+}
+
+- (NSString *)description {
+    NSMutableString *str = [NSMutableString string];
+    [self.flags enumerateObjectsUsingBlock:^(ADVArg * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [str appendString:[NSString stringWithFormat:@"\t%@\n", obj.description]];
+    }];
+
+    return [NSString stringWithFormat:@"Advtr Color Palette creator\n\n  $ advtr-clr\n\nOptions:\n%@", str];
 }
 
 - (id)getObjectWithFlag:(NSString *)flag {

@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 extern NSURL *resolve(NSURL* filePath);
 
-#define ADVArgParserGetter(flag, type) (type *)[parser getObjectWithFlag:flag]
+#define ADVArgParserGetter(flag, type) (type *)[[ADVArgParser defaultParser] getObjectWithFlag:(flag)]
 
 NS_ASSUME_NONNULL_END
 
