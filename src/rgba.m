@@ -119,7 +119,8 @@ RGBA init_string_rgba(NSString *color) {
         return init_rgba([NSArray arrayWithArray:colors]);
     }
 
-    return init_default_rgba();
+    // Return a clear colour if it fails
+    return init_clear_rgba();
 }
 
 RGBA init_clear_rgba(void) {

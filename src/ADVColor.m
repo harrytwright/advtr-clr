@@ -47,11 +47,11 @@ static dispatch_once_t onceToken;
 }
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"%@ - %@", self.key, [NSString stringWithFormat:@"rgba(%.0f, %.0f, %.0f, %.0f)",
+    return [NSString stringWithFormat:@"%@ - %@", self.key, [NSString stringWithFormat:@"rgba(%.0f, %.0f, %.0f, %f)",
                                                              self.color.redComponent * 255.0,
                                                              self.color.greenComponent * 255.0,
                                                              self.color.blueComponent * 255.0,
-                                                             self.color.alphaComponent * 255.0]];
+                                                             self.color.alphaComponent]];
 }
 
 @end
